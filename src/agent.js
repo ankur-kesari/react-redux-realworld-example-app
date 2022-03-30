@@ -3,7 +3,7 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = 'https://ankur10.squareops.co.in/api';
+const API_ROOT = process.env.REACT_APP_API_ROOT;
 
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
