@@ -95,3 +95,4 @@ export default {
   Tags,
   setToken: _token => { token = _token; }
 };
+
