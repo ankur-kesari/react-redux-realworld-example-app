@@ -3,7 +3,7 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = process.env.REACT_APP_API_ROOT;
+const API_ROOT = process.env.REACT_APP_API_ROOT;         //define REACT_APP_API_ROOT = ALB-endpoint (in environment variable of aws amplify) 
 //const API_ROOT = 'https://conduit.productionready.io/api';
 
 const encode = encodeURIComponent;
